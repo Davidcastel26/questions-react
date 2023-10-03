@@ -15,7 +15,7 @@ export const SingleQuestion = (
                 className="question-btn"
                 onClick={() => setShowInfo(!showInfo)}
             >
-                
+            { showInfo ? <AiOutlineMinus /> : <AiOutlinePlus/>}
             </button>
         </header>
         { showInfo && <p>{info}</p>}
